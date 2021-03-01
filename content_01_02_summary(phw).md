@@ -142,7 +142,7 @@
 
   ##### 그러면 아래와 같은 3차원 모양의 cost function의 그래프가 그려진다.($\theta_0, \theta_1, J(\theta_0, \theta_1)$의 그래프를 그려야 하기 때문에 x축, y축, z축이 필요하다)
 
-  ##### ![image-20210226165724327](C:\Users\korea\AppData\Roaming\Typora\typora-user-images\image-20210226165724327.png)
+  ![content_01_02(2)](img/content_01_02(2).PNG)
 
   ##### 이 그림에서 y축은 cost function의 값을 나타내기 때문에 최소의 값을 알 수 있다.
 
