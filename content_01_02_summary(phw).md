@@ -130,7 +130,7 @@
 
   ##### 예를 들어, 1) $\theta_1 = 1, J(\theta_1) = 0$ 2) $\theta_1 = 0.5, J(\theta_1) = ~0.58$ 3) $\theta_1 = 0, J(\theta_1) = ~2.3$이라고 하고, 이 값들을 $\theta_1$ vs $J(\theta_1)$을 그래프로 그리게 된다면 아래와 같은 그래프가 그려진다. 
 
-  ![content_01_02(1)](content_01_02(1).PNG)
+  ![content_01_02(1)](img/content_01_02(1).PNG)
 
   ##### learning algorithm에서 가장 중요한 목표는 $J(\theta_1)$을 최소화 시키는 $\theta_1$을 찾는 것인데, 그렇게 되면 여기서 최적의 $\theta_1$는 1이 된다.
 
