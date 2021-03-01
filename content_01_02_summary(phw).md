@@ -148,7 +148,7 @@
 
   ##### 위와 같은 surface plot 대신에 contour figures/plot을 사용하면 아래 그림과 같다.
 
-  ![image-20210226165729708](C:\Users\korea\AppData\Roaming\Typora\typora-user-images\image-20210226165729708.png)
+  ![content_01_02(3)](img/content_01_02(3).PNG)
 
   ##### 각각의 색깔에 있는 점들은 $J(\theta_0, \theta_1)$의 값이 같지만, 명백하게 보자면 $\theta_0$과 $\theta_1$가 다르기 때문에 다른 위치에 있다.
 
