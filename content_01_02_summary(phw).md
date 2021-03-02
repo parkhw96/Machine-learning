@@ -210,4 +210,4 @@
 
 - ### <u>편미분 과정</u>
 
-  ##### ![content_01_02(7)](img/content_01_02(7).JPG)
+  ##### ![content_01_02(7)](img/content_01_02(7).jpg)
