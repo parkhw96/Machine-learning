@@ -68,9 +68,7 @@
 
   ##### 전에 보았던 house price를 예를 들어 보면 hypothesis는 아래와 같은 형태로 표현된다. 
 
-  >$$
-  h_\theta(x) = \theta_0 + \theta_1x
-  $$
+  h<sub>&theta;</sub>(x) = &theta;<sub>o</sub> x + &theta;<sub>1</sub>x
 
   ##### 간단하게 h(x)로도 표기한다.
 
