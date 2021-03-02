@@ -162,13 +162,13 @@
 
   ##### parameter가 여러 개 있을 때에도 적용가능 하다.
 
-  ![image-20210226165740974](C:\Users\korea\AppData\Roaming\Typora\typora-user-images\image-20210226165740974.png)
+  ![content_01_02(4)](img/content_01_02(4).PNG)
 
   ##### := 의 의미는 업데이트 하겠다는 의미이다.
 
   ##### $\alpha$(alpha)의 의미는 학습 속도(learning rate)이다. alpha가 너무 작게 되면 조금씩 움직여 오래 걸리고, alpha가 너무 크면 최소값을 지나칠 수 있다. 따라서 alpha를 잘 고르는 것이 중요하다.
 
-  ##### ![image-20210226165750929](C:\Users\korea\AppData\Roaming\Typora\typora-user-images\image-20210226165750929.png).
+ ![content_01_02(5)](img/content_01_02(5).PNG)
 
   ##### (for j =0 and j = 1)의 의미는 동시에 업데이트 하겠다는 의미이다. 동시에 업데이트를 하지 않게 되면 그것은 gradient descent가 아니고 이상하게 작동한다.(3차원의 공간이므로 따로 움직이는 것이 아니라 동시에 두 개의 점을 옮겨야 한다.)
 
