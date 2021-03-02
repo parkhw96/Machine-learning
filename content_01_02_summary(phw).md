@@ -72,7 +72,7 @@
 
   ##### 간단하게 h(x)로도 표기한다.
 
-  ##### $\theta_i$는 parameter이다. 
+  ##### ![h_\theta(x) = \theta_0 + \theta_1x](https://latex.codecogs.com/gif.latex?%5Ctheta_i)는 parameter이다. 
 
   ##### $\theta_0$는 zero condition, $\theta_1$는 기울기이다.
 
