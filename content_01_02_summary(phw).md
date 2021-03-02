@@ -172,7 +172,7 @@
 
   ##### (for j =0 and j = 1)의 의미는 동시에 업데이트 하겠다는 의미이다. 동시에 업데이트를 하지 않게 되면 그것은 gradient descent가 아니고 이상하게 작동한다.(3차원의 공간이므로 따로 움직이는 것이 아니라 동시에 두 개의 점을 옮겨야 한다.)
 
-  ![image-20210226165759412](C:\Users\korea\AppData\Roaming\Typora\typora-user-images\image-20210226165759412.png)
+  ##### ![content_01_02(6)](img/content_01_02(6).PNG)
 
   ##### 각각 $\theta_0$와 $\theta_1$에 대하여 편미분(partial derivative)을 하게 되면 위와 같은 식이 나오게 된다.
 
@@ -210,4 +210,4 @@
 
 - ### <u>편미분 과정</u>
 
-![image-20210225215549349](C:\Users\korea\AppData\Roaming\Typora\typora-user-images\image-20210225215549349.png)
+  ##### ![content_01_02(7)](img/content_01_02(7).JPG)
