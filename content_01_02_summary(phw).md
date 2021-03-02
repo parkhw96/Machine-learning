@@ -86,7 +86,7 @@
 
   ##### cost function은 데이터에 가장 잘맞는 직선이 무엇인지 알려준다. 
 
-  ##### x값을 $h_\theta(x)$에 넣어 실제 y값과 근사한 출력 값을 얻어야 한다.
+  ##### x값을 ![h_\theta(x) = \theta_0 + \theta_1x](https://latex.codecogs.com/gif.latex?%5Ctheta_i)에 넣어 실제 y값과 근사한 출력 값을 얻어야 한다.
 
   ##### minimization problem -> Minimize $(h_\theta(x) - y)^2$ : $h_\theta(x)$과 y의 차이를 최소화 해야 한다.(각각, 모든 예제에 대해서 해야 한다.)
 
