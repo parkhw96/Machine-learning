@@ -48,11 +48,11 @@
 
   ##### 이전에 배웠던, variable이 1개 일때, gradient descent의 공식은 아래와 같았다.
 
-  ![image-20210226121303205](C:\Users\korea\AppData\Roaming\Typora\typora-user-images\image-20210226121303205.png)
+  ##### ![content_04(1)](img/content_04(1).PNG)
 
   ##### 위에서 보듯이 $\theta_0$와 $\theta_1$의 규칙(공식)이 다르다. 이것을 동일한 규칙(공식)으로 바꾸면 아래와 같다.
 
-  ![image-20210226121354221](C:\Users\korea\AppData\Roaming\Typora\typora-user-images\image-20210226121354221.png)
+  ##### ![content_04(2)](img/content_04(2).PNG)
 
   ##### 즉, $\theta_j$ - learning rate(alpha) * ($\theta_j$에 대해 $\theta$ vector의 편미분)이다. $J(\theta)$를 parameter($\theta$) vector의 함수로 생각하기로 하였기 때문에 $\theta_j$에 대해 $\theta$ vector의 편미분을 한다.
 
@@ -68,7 +68,7 @@
 
   ##### 	예를 들어 x1 = size(0 - 2000 feet), x2 = number of bedrooms(1 - 5)이라면, $\theta_1$ vs $\theta_1$의 cost function 	그림을 그려보면 아래와 같이 길고 얇은 모양의 그림이 나오게 된다.(범위 차가 크게 남, cost function의 	gradient descent는 global minimum을 찾는 시간까지 오래 걸린다, 비효율적이다)
 
-  ​	![image-20210226130645162](C:\Users\korea\AppData\Roaming\Typora\typora-user-images\image-20210226130645162.png)
+  ##### ![content_04(3)](img/content_04(3).PNG)
 
   ##### 	이러한 경우, input에 대해 rescale 하는 것이 더 효율적이다.
 
@@ -76,7 +76,7 @@
 
   ##### 	여기서  mean은 training set에서 $x_i$의 평균 값이다. max 대신 standard deviation(표준편차 혹은 max 	- min)으로 적어도 된다.
 
-  ​	![image-20210226130936016](C:\Users\korea\AppData\Roaming\Typora\typora-user-images\image-20210226130936016.png)
+  ##### ![content_04(4)](img/content_04(4).PNG)
 
   ##### 	이렇게 되면 내가 가지고 있는 값들은 모두 대략 0이라는 평균을 가지게 된다.
 
@@ -86,17 +86,17 @@
 
 - ### <u>Learning Rate $\alpha$</u>
 
-  ##### ![image-20210226131034265](C:\Users\korea\AppData\Roaming\Typora\typora-user-images\image-20210226131034265.png)
+  ##### ![content_04(5)](img/content_04(5).PNG)
 
   ##### Gradient descent가 잘 작동 중이라면, $J(\theta)$는 매 반복마다 줄어 들게 된다.
 
   ##### 위에서 보다시피 특정 값 이후로는 큰 이득을 얻지 못한다.(iterations가 300 이후로는 큰 이득을 얻지 못한다.)
 
-  ![image-20210226131135355](C:\Users\korea\AppData\Roaming\Typora\typora-user-images\image-20210226131135355.png)
+  ##### ![content_04(6)](img/content_04(6).PNG)
 
   ##### 이렇게 반복을 함에도 값이 증가하게 되면, $\alpha$를 줄여야 한다.
 
-  ![image-20210226131202664](C:\Users\korea\AppData\Roaming\Typora\typora-user-images\image-20210226131202664.png)
+  ##### ![content_04(7)](img/content_04(7).PNG)
 
   ##### $\alpha$값을 줄이게 되면 green line처럼 minimum에 도달할 수 있다.
 
@@ -122,7 +122,7 @@
 
   ##### 	예를 들어, $\theta_0 + \theta_1x + \theta_2x^2$라는 quadratic function(2차 함수)가 있다. 이 함수를 housing data에 사용	할 수 있는데, 이는 별로 좋지 못하다. 굴절이 생기는 점이 있기 때문이다. 이 의미는 size가 엄청 커지면	 	housing  price는 감소한다는 의미이기 때문이다. 이 때문에 cubic function(3차 함수)를 사용하는 것이 	더 좋다.
 
-  ​	![image-20210226131915153](C:\Users\korea\AppData\Roaming\Typora\typora-user-images\image-20210226131915153.png)
+  ##### ![content_04(8)](img/content_04(8).PNG)
 
   ##### 	기존 linear hypothesis와 cost function을 이러한 polynomial descriptions에 map하기 위해 가장 쉬	운 방법은 $x_1 = x, x_2 = x^2, x_3 = x^3$로 설정하는 것이다.
 
@@ -144,7 +144,7 @@
 
   ##### 우선 (모든 j에 대해)$\theta_j$에 대해 $J(\theta)$를 편미분하고 그 값을 0으로 둔다. 이 방법을 $\theta_0$부터 $\theta_j$까지 한다. 이렇게 되면 $J(\theta)$를 최소화하는 $\theta$값을 찾을 수 있다.
 
-  ![image-20210226132705476](C:\Users\korea\AppData\Roaming\Typora\typora-user-images\image-20210226132705476.png)
+  ##### ![content_04(9)](img/content_04(9).PNG)
 
   ##### 여기서 m = 4(training data가 4개), n = 4(변수가 4개)
 
@@ -154,7 +154,7 @@
 
   ##### y에 대해서도 비슷하게 한다면, [m x 1] 크기의 column vector y가 만들어 진다.
 
-  ![image-20210226132842884](C:\Users\korea\AppData\Roaming\Typora\typora-user-images\image-20210226132842884.png)
+  ##### ![content_04(10)](img/content_04(10).PNG)
 
   ##### 이 식을 계산하게 되면 cost function을 최소화하는 $\theta$값을 찾을 수 있다.
 
@@ -162,7 +162,7 @@
 
   ##### Design matrix(X)는 이러한 각 training example를 transpose하여 이어 붙여 만들어 진다.
 
-  ![image-20210226133138200](C:\Users\korea\AppData\Roaming\Typora\typora-user-images\image-20210226133138200.png)
+  ##### ![content_04(11)](img/content_04(11).PNG)
 
   ##### 그 결과 X는 [m x n+1] 크기의 matrix가 된다.
 
