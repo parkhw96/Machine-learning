@@ -130,7 +130,7 @@
 
   ##### 예를 들어, 1) $\theta_1 = 1, J(\theta_1) = 0$ 2) $\theta_1 = 0.5, J(\theta_1) = ~0.58$ 3) $\theta_1 = 0, J(\theta_1) = ~2.3$이라고 하고, 이 값들을 $\theta_1$ vs $J(\theta_1)$을 그래프로 그리게 된다면 아래와 같은 그래프가 그려진다. 
 
-  ![content_01_02(1)](img/content_01_02(1).PNG)
+  ##### ![content_01_02(1)](img/content_01_02(1).PNG)
 
   ##### learning algorithm에서 가장 중요한 목표는 $J(\theta_1)$을 최소화 시키는 $\theta_1$을 찾는 것인데, 그렇게 되면 여기서 최적의 $\theta_1$는 1이 된다.
 
@@ -142,13 +142,13 @@
 
   ##### 그러면 아래와 같은 3차원 모양의 cost function의 그래프가 그려진다.($\theta_0, \theta_1, J(\theta_0, \theta_1)$의 그래프를 그려야 하기 때문에 x축, y축, z축이 필요하다)
 
-  ![content_01_02(2)](img/content_01_02(2).PNG)
+  ##### ![content_01_02(2)](img/content_01_02(2).PNG)
 
   ##### 이 그림에서 y축은 cost function의 값을 나타내기 때문에 최소의 값을 알 수 있다.
 
   ##### 위와 같은 surface plot 대신에 contour figures/plot을 사용하면 아래 그림과 같다.
 
-  ![content_01_02(3)](img/content_01_02(3).PNG)
+  ##### ![content_01_02(3)](img/content_01_02(3).PNG)
 
   ##### 각각의 색깔에 있는 점들은 $J(\theta_0, \theta_1)$의 값이 같지만, 명백하게 보자면 $\theta_0$과 $\theta_1$가 다르기 때문에 다른 위치에 있다.
 
@@ -162,13 +162,13 @@
 
   ##### parameter가 여러 개 있을 때에도 적용가능 하다.
 
-  ![content_01_02(4)](img/content_01_02(4).PNG)
+  ##### ![content_01_02(4)](img/content_01_02(4).PNG)
 
   ##### := 의 의미는 업데이트 하겠다는 의미이다.
 
   ##### $\alpha$(alpha)의 의미는 학습 속도(learning rate)이다. alpha가 너무 작게 되면 조금씩 움직여 오래 걸리고, alpha가 너무 크면 최소값을 지나칠 수 있다. 따라서 alpha를 잘 고르는 것이 중요하다.
 
- ![content_01_02(5)](img/content_01_02(5).PNG)
+  ##### ![content_01_02(5)](img/content_01_02(5).PNG)
 
   ##### (for j =0 and j = 1)의 의미는 동시에 업데이트 하겠다는 의미이다. 동시에 업데이트를 하지 않게 되면 그것은 gradient descent가 아니고 이상하게 작동한다.(3차원의 공간이므로 따로 움직이는 것이 아니라 동시에 두 개의 점을 옮겨야 한다.)
 
