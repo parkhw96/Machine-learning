@@ -85,7 +85,8 @@
 
   ##### 	연산하는 과정과 예는 아래와 같다.
 
-  ​	![image-20210225204912076](C:\Users\korea\AppData\Roaming\Typora\typora-user-images\image-20210225204912076.png)
+  ##### ![content_03(1)](img/content_03(1))
+
 
   ##### 	우선 두번째 벡터의 요소들 $\begin{bmatrix}1 \\5 \\ \end{bmatrix}$과 첫번째 벡터의 row $\begin{bmatrix} 1&3 \end{bmatrix}$와 곱한다. 그리고 그 결과 값들을 다 더한다. 	이로 인해 나온 숫자는 새로 만들어지는 벡터의 첫번째 요소가 된다.
 
