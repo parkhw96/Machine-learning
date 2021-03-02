@@ -85,7 +85,7 @@
 
   ##### 	연산하는 과정과 예는 아래와 같다.
 
-  ##### ![content_03(1)](img/content_03(1))
+  ##### ![content_03(1)](img/content_03(1).PNG)
 
 
   ##### 	우선 두번째 벡터의 요소들 $\begin{bmatrix}1 \\5 \\ \end{bmatrix}$과 첫번째 벡터의 row $\begin{bmatrix} 1&3 \end{bmatrix}$와 곱한다. 그리고 그 결과 값들을 다 더한다. 	이로 인해 나온 숫자는 새로 만들어지는 벡터의 첫번째 요소가 된다.
@@ -94,7 +94,7 @@
 
   ##### A * x = y라고 두고 A는 [m x n]의 matrix, x는 [n x 1]의 vector라고 하면 여기서 A의 n(column)과 x의 n(row)은 무조건 같아야 한다. 결과는 m크기의 벡터가 된다.
 
-  ![image-20210225205402074](C:\Users\korea\AppData\Roaming\Typora\typora-user-images\image-20210225205402074.png)
+  ##### ![content_03(2)](img/content_03(2).PNG)
 
   ##### 위 그림처럼 4개의 values와 $h_\theta(x) = -40 + 0.25x$이라면 어떻게 해야 할까?
 
@@ -128,9 +128,9 @@
 
   ##### C-matrix i번째 column은 A-matrix와 B-matrix의 i번째 column의 곱 연산의 결과이다.
 
-  ![image-20210225210709209](C:\Users\korea\AppData\Roaming\Typora\typora-user-images\image-20210225210709209.png)
+  ##### ![content_03(3)](img/content_03(3).PNG)
 
-  ![image-20210225210722673](C:\Users\korea\AppData\Roaming\Typora\typora-user-images\image-20210225210722673.png)
+  ##### ![content_03(4)](img/content_03(4).PNG)
 
   ##### 위의 그림과 같이 분리해서 생각한다. 결과적으로 저 2개의 행렬을 곱하면 $\begin{bmatrix}11&10 \\ 9&14 \\ \end{bmatrix}$와 같은 matrix가 생성된다.
 
@@ -140,7 +140,7 @@
 
 - ### <u>Implementation/use</u>
 
-  ##### ![image-20210225210937940](C:\Users\korea\AppData\Roaming\Typora\typora-user-images\image-20210225210937940.png)
+  ##### ![content_03(5)](img/content_03(5).PNG)
 
   ##### 위의 그림과 같이 House prices에서 3개의 hypothesis와 똑같은 data set을 가지고 있다고 하자.
 
@@ -218,7 +218,7 @@
 
   ##### 	Square matrix만 inverse를 가진다.
 
-  ​	![image-20210225213553717](C:\Users\korea\AppData\Roaming\Typora\typora-user-images\image-20210225213553717.png)
+  ##### ![content_03(6)](img/content_03(6).PNG)
 
   ##### 	어떤 matrix의 모든 요소가 0이라면 그 matrix의 inverse matrix는 없다.
 
@@ -236,5 +236,5 @@
 
   ##### 	$A_(i,\space j) = B_(j, \space i)$
 
-  ​	![image-20210225213922858](C:\Users\korea\AppData\Roaming\Typora\typora-user-images\image-20210225213922858.png)
+  ##### ![content_03(7)](img/content_03(7).PNG)
 
