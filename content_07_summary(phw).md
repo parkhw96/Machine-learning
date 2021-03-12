@@ -16,7 +16,7 @@
 
     ##### <u>variance : 주어진 각 데이터에 해당하는 예측값들이 퍼져있는 정도</u>
 
-    ![image-20210312150409966](C:\Users\korea\AppData\Roaming\Typora\typora-user-images\image-20210312150409966.png)
+    ##### ![content_07(1)](img/content_07(1).PNG)
 
     ##### 첫번째 그림에서 데이터(X)들이 hypothesis와 멀리 떨어져있으니 high bias인 것이고, 또한 예측값들이 파란색 선위에 있기 때문에 low variance이다.
 
@@ -28,7 +28,7 @@
 
     ##### logistic regression에서도 똑같은 일이 일어난다.
 
-    ![image-20210312153026305](C:\Users\korea\AppData\Roaming\Typora\typora-user-images\image-20210312153026305.png)
+    ##### ![content_07(2)](img/content_07(2).PNG)
 
   ##### 만일 많은 feature들과 적은 data들을 가지고 있다면 overfitting이라는 문제가 생길 수 있다.
 
@@ -44,7 +44,7 @@
 
   ##### 위의 linear regression에서 overfitting한 문제를 예로 들면, 그 overfitting을 피하기 위해 $\theta_3$와 $\theta_4$를 정말 작게 만드는 penalty를 준다.
 
-  ![image-20210312153745172](C:\Users\korea\AppData\Roaming\Typora\typora-user-images\image-20210312153745172.png)
+  ##### ![content_07(3)](img/content_07(3).PNG)
 
   ##### 위의 파란색은 $\theta_3$와 $\theta_4$를 penalize(처벌)하기 위해 기존의 cost function을 수정한 것이다.
 
@@ -52,7 +52,7 @@
 
   ##### 그렇게 되면 아래와 같이 아까 구불구불한 4차함수에서 2차함수로 바뀌게 된다.
 
-  ![image-20210312154007351](C:\Users\korea\AppData\Roaming\Typora\typora-user-images\image-20210312154007351.png)
+  ##### ![content_07(4)](img/content_07(4).PNG)
 
   ##### 위의 예에서는 두 parameter 값에 패널티를 주었다.
 
@@ -64,13 +64,13 @@
 
   ##### regularization 항을 포함한 linear regression에서의 cost function은 아래와 같다.
 
-  ![image-20210312154735599](C:\Users\korea\AppData\Roaming\Typora\typora-user-images\image-20210312154735599.png)
+  ##### ![content_07(5)](img/content_07(5).PNG)
 
   ##### cost function에 정규화 항을 포함시킴으로써, 데이터에 맞는 더 완만한 곡선과 더 좋은 hypothesis를 얻을 수 있다.
 
   ##### 만약 lamda가 매우 크다면, $\theta_0$를 제외한 모든 parameter들은 높은 패널티를 받아 거의 0으로 될 것이다. 만약 그런 일이 발생한다면 hypothesis에서 모든 항을 제거해버린 것과 같을 것이다. 그렇게 되면 underfitting이라는 결과가 나온다.
 
-  ![image-20210312155127791](C:\Users\korea\AppData\Roaming\Typora\typora-user-images\image-20210312155127791.png)
+  ##### ![content_07(6)](img/content_07(6).PNG)
 
   ##### 그래서 lamda를 잘 선택해야 한다.
 
@@ -82,17 +82,17 @@
 
   ##### regularization을 적용한 linear regression의 cost function은 아래와 같다.
 
-  ![image-20210312155250211](C:\Users\korea\AppData\Roaming\Typora\typora-user-images\image-20210312155250211.png)
+  ##### ![content_07(7)](img/content_07(7).PNG)
 
   ##### regularization에 대해 $\theta_0$에 패널티를 주지 않기 때문에 gradient descent 공식은 2가지로 나누어 구분한다.
 
-  ![image-20210312155431289](C:\Users\korea\AppData\Roaming\Typora\typora-user-images\image-20210312155431289.png)
+  ##### ![content_07(8)](img/content_07(8).PNG)
 
-  ![image-20210312155448194](C:\Users\korea\AppData\Roaming\Typora\typora-user-images\image-20210312155448194.png)
+  ##### ![content_07(9)](img/content_07(9).PNG)
 
   ##### 최종적으로 정리해보자면 아래와 같다.
 
-  ![image-20210312155713040](C:\Users\korea\AppData\Roaming\Typora\typora-user-images\image-20210312155713040.png)
+  ##### ![content_07(10)](img/content_07(10).PNG)
 
   ##### $(1 - \alpha\frac {lamda} {m})$항은 대게 1보다 작다. 왜냐하면 learning rate는 작고, m은 크기 때문이다. 그래서 1 - (작은 숫자)로 된다. 따라서 이 항은 종종 0.95에서 0.99사이 이다.
 
@@ -108,23 +108,23 @@
 
   ##### regularization을 사용하기 위해서 방정식에 (lamda[n+1 x n+1])의 항을 추가한다.
 
-  ![image-20210312160416540](C:\Users\korea\AppData\Roaming\Typora\typora-user-images\image-20210312160416540.png)
+  ##### ![content_07(11)](img/content_07(11).PNG)
 
   - #### <u>Regularization for logistic regression</u>
 
     ##### logistic regression에서의 cost function은 아래와 같다.
 
-    ![image-20210312160600032](C:\Users\korea\AppData\Roaming\Typora\typora-user-images\image-20210312160600032.png)
+    ##### ![content_07(12)](img/content_07(12).PNG)
 
     ##### 이제 여기에 regularization을 위해 아래와 같은 항을 추가한다.
 
-    ![image-20210312160750704](C:\Users\korea\AppData\Roaming\Typora\typora-user-images\image-20210312160750704.png)
+    ##### ![content_07(13)](img/content_07(13).PNG)
 
     ##### 이것은 $\theta_1, \theta_2 ,..., \theta_n$까지 패널티를 주는 효과를 가진다. linear regression과 마찬가지로 더 적합한 저차항의 hypothesis를 가질 수 있다.(패널티를 줘서 항의 규모를 줄인다.)
 
     ##### 최종적으로는 아래와 같다.
 
-    ![image-20210312160823613](C:\Users\korea\AppData\Roaming\Typora\typora-user-images\image-20210312160823613.png)
+    ##### ![content_07(14)](img/content_07(14).PNG)
 
     ##### regularization된 logistic regression의 gradient descent는 linear regression의 gradient descent와 hypothesis가 다르다는 점만 제외하면 똑같이 생겼다.
 
