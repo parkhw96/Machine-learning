@@ -20,7 +20,7 @@
 
   ##### 위의 작업은 합리적인 것처럼 보이지만, 만약 매우 Tumor size가 큰 하나의 yes가 들어온다고 하면, 그 data들에 맞는 가설함수(직선)를 다시 그리게 될것이다. 그렇게 되면 아래와 같이 파란색 직선이 생기고, 임계점에 해당하는 x의 값은 더 오른쪽으로 이동해 원치않는 방향으로 분류를 하게 된다.
 
-  ![image-20210312004918140](C:\Users\korea\AppData\Roaming\Typora\typora-user-images\image-20210312004918140.png)
+  ##### ![content_06(2)](img/content_06(2).PNG)
 
   ##### 이러한 문제 말고도 linear regression에서 또다른 문제가 있다. Y가 0또는 1이라는 것을 알지만, linear regression에서의 hypothesis는 1보다 크거나 0보다 작은 값을 줄 수 있다라는 문제이다.
 
@@ -38,11 +38,11 @@
 
   ##### 여기서 $g(z) = 1 / (1 - e^{-z})$(z는 실수)로 정의되며, sigmoid function 혹은 logistic function으로 불린다. 이 식과 위의 hypothesis를 결합해보면 아래와 같은 결과가 나온다.
 
-  ![image-20210312005728171](C:\Users\korea\AppData\Roaming\Typora\typora-user-images\image-20210312005728171.png)
+  ##### ![content_06(3)](img/content_06(3).PNG)
 
   ##### sigmoid function은 아래와 같이 생겼다.
 
-  ![image-20210312005824520](C:\Users\korea\AppData\Roaming\Typora\typora-user-images\image-20210312005824520.png)
+  ##### ![content_06(4)](img/content_06(4).PNG)
 
   ##### 0.5를 통과하며 그 뒤로 평평 해진다.(0과 1에서의 점근선이 있다.)
 
@@ -66,7 +66,7 @@
 
   ##### sigmoid function을 보게 되면
 
-  ![image-20210312011105762](C:\Users\korea\AppData\Roaming\Typora\typora-user-images\image-20210312011105762.png)
+  ##### ![content_06(5)](img/content_06(5).PNG)
 
   ##### z가 0보다 크거나 같을 때, g(z)는 0.5보다 크거나 같게 된다. 따라서 z가 양수라면 g(z)는 0.5보다 크게 된다.
 
@@ -78,13 +78,13 @@
 
     ##### $h_\theta(x) = g(\theta_0 + \theta_1{x_1} + \theta_2{x_2})$가 있다고 하자.
 
-    ![image-20210312011623495](C:\Users\korea\AppData\Roaming\Typora\typora-user-images\image-20210312011623495.png)
+    ##### ![content_06(6)](img/content_06(6).PNG)
 
     ##### 예를 들어, $\theta_0 = -3, \theta_1 = 1, \theta_2 = 1$이라고 하면, $z = \theta^Tx$이기 때문에 parameter값들을 식에 대입해보면 $-3{x_0} + 1{x_1} + 1{x_2}$가 나오게 되고 그에 따라 $3{x_0} + 1{x_1} + 1{x_2} >= 0$일 때 y=1이라고 예측한다.
 
     ##### 다시 말해 $x_1 + x_2 >= 3$일 때, y=1이라고 예측한다는 것이다. $x_1 + x_2 = 3$을 그리게 되면 그것이 decision boundary가 된다.
 
-    ![image-20210312012214775](C:\Users\korea\AppData\Roaming\Typora\typora-user-images\image-20210312012214775.png)
+    ##### ![content_06(7)](img/content_06(7).PNG)
 
     ##### 저 분홍직선이 decision boundary이고, 정확히 얘기하자면 저 decision boundary는 $h_\theta(x) = 0.5$일 때의 점들의 집합이다.
 
@@ -102,7 +102,7 @@
 
   ##### ${x_1}^2 + {x_2}^2 = 1$을 그려보면, 아래와 같이 반지름이 1인 원이 나오게 된다.
 
-  ![image-20210312013229576](C:\Users\korea\AppData\Roaming\Typora\typora-user-images\image-20210312013229576.png)
+  ##### ![content_06(8)](img/content_06(8).PNG)
 
   ##### 더 고차다항식을 사용함으로써, 더 복잡한 decision boundaries를 얻을 수 있다.
 
@@ -116,29 +116,29 @@
 
   ##### linear regression에서는 $\theta$를 결정하기 위해 아래와 같은 cost function의 식을 썼다.
 
-  ![image-20210312013621883](C:\Users\korea\AppData\Roaming\Typora\typora-user-images\image-20210312013621883.png)
+  ##### ![content_06(9)](img/content_06(9).PNG)
 
   ##### 이제는 squared error항 대신에, 'cost()'라는 것을 정의하게 된다.
 
-  ![image-20210312014045772](C:\Users\korea\AppData\Roaming\Typora\typora-user-images\image-20210312014045772.png)
+  ##### ![content_06(10)](img/content_06(10).PNG)
 
   ##### linear regression에서 사용하던 것과 같은 측정을 사용하여 각각의 example에 대해 cost를 평가한다.
 
   ##### 다시 $J(\theta)$를 정의하게 되면 아래와 같다.
 
-  ![image-20210312014216340](C:\Users\korea\AppData\Roaming\Typora\typora-user-images\image-20210312014216340.png)
+  ##### ![content_06(11)](img/content_06(11).PNG)
 
   ##### 모든 training data에 대한 개별적인 cost들의 합을 training data의 개수(m)으로 나눈 것이다.
 
   ##### 더 간단하게 하기 위해 윗첨자를 지울 수도 있다.
 
-  ![image-20210312014403328](C:\Users\korea\AppData\Roaming\Typora\typora-user-images\image-20210312014403328.png)
+  ##### ![content_06(12)](img/content_06(12).PNG)
 
   ##### 이것이 의미하는 바는 결과가 $h_\theta(x)$이고 실제 결과가 y일 때, learning algorithm이 지불해야하는 비용이다.
 
   ##### 하지만 만일 위와 같은 함수를 logistic regression에 사용한다면 parameter $\theta$에 대해 non-convex function이다.
 
-  ![image-20210312014824527](C:\Users\korea\AppData\Roaming\Typora\typora-user-images\image-20210312014824527.png)
+  ##### ![content_06(13)](img/content_06(13).PNG)
 
   ##### logistic regression에서의 hypothesis가 비선형 함수이고, 그 함수를 Cost()라는 함수에 넣고 또 그것을 cost function에 넣어 $J(\theta)$를 그리게 되면 왼쪽과 같은 그림이 나오게 된다.
 
@@ -152,13 +152,13 @@
 
     ##### convex Cost() function이란, gradient descent를 적용시킬 수 있다는 의미이다.
 
-    ![image-20210312015659109](C:\Users\korea\AppData\Roaming\Typora\typora-user-images\image-20210312015659109.png)
+    ##### ![content_06(14)](img/content_06(14).PNG)
 
     ##### 위의 식이 logistic regression에서의 Cost() function이다. 
 
     ##### y=1일 때를 그려보면 아래와 같다.
 
-    ![image-20210312015957919](C:\Users\korea\AppData\Roaming\Typora\typora-user-images\image-20210312015957919.png)
+    ##### ![content_06(15)](img/content_06(15).PNG)
 
     ##### y=1이기 때문에 $-log(h_\theta(x))$를 사용한다.(x축은 $h_\theta(x)$(예측한 값), y축은 예측과 관련된 cost)
 
@@ -170,7 +170,7 @@
 
     ##### y=0일 때를 그려보면 아래와 같다.
 
-    ![image-20210312020856180](C:\Users\korea\AppData\Roaming\Typora\typora-user-images\image-20210312020856180.png)
+    ##### ![content_06(16)](img/content_06(16).PNG)
 
     ##### y=0이기 때문에 $-log(1 - h_\theta(x))$를 사용한다.(x축은 $h_\theta(x)$(예측한 값), y축은 예측과 관련된 cost)
 
@@ -186,23 +186,23 @@
 
   ##### logistic regression의 cost function은 다음과 같다.
 
-  ![image-20210312021508336](C:\Users\korea\AppData\Roaming\Typora\typora-user-images\image-20210312021508336.png)
+  ##### ![content_06(17)](img/content_06(17).PNG)
 
   ##### 두 줄 혹은 두 가지 case로 적는 대신 한 개의 방정식으로 압축할 수 있다. 이렇게 압축하는 것이 더 효율적이다.
 
-  ![image-20210312021624585](C:\Users\korea\AppData\Roaming\Typora\typora-user-images\image-20210312021624585.png)
+  ##### ![content_06(18)](img/content_06(18).PNG)
 
   ##### 각각 y=1, y=0을 대입해보면 위에서 보았던(2가지 case로 나누는 경우)것과 같은 것을 확인할 수 있다.
 
   ##### 따라서 $\theta$ parameter에 대한 cost function은 아래와 같다.
 
-  ![image-20210312021815794](C:\Users\korea\AppData\Roaming\Typora\typora-user-images\image-20210312021815794.png)
+  ##### ![content_06(19)](img/content_06(19).PNG)
 
   - #### <u>How to minimize the logistic regression cost function</u>
 
     ##### $J(\theta)$를 최소화하는 방법 -> gradient descent를 사용한다.
 
-    ![image-20210312022141840](C:\Users\korea\AppData\Roaming\Typora\typora-user-images\image-20210312022141840.png)
+    ##### ![content_06(20)](img/content_06(20).PNG)
 
     ##### 이 방정식은 linear regression에서의 규칙과 같지만, 다른 점은 hypothesis의 정의가 다르다는 것이다.
 
@@ -230,7 +230,7 @@
 
   ##### Multiclass classification에 대해 logistic regression에서는 one vs. all를 사용한다.(하나 대 다수)
 
-  ![image-20210312023038773](C:\Users\korea\AppData\Roaming\Typora\typora-user-images\image-20210312023038773.png)
+  ##### ![content_06(21)](img/content_06(21).PNG)
 
   ##### one vs. all classification을 사용하는 것은 multiclass classification을 binary classification처럼 만들어 준다.
 
@@ -238,7 +238,7 @@
 
     ##### 3가지 binary classification problems으로 training set을 나눈다.(즉, fake training set을 새롭게 만들어 계산한다)
 
-    ##### ![image-20210312023638631](C:\Users\korea\AppData\Roaming\Typora\typora-user-images\image-20210312023638631.png)
+    ##### ![content_06(22)](img/content_06(22).PNG)
 
     ##### 세모(클래스 1), 네모(클래스 2), 엑스(클래스 3)
 
@@ -246,7 +246,7 @@
 
     ##### 두번째 예와 세번째 예도 똑같이 적용한다.
 
-    ![image-20210312024442269](C:\Users\korea\AppData\Roaming\Typora\typora-user-images\image-20210312024442269.png)
+    ##### ![content_06(23)](img/content_06(23).PNG)
 
     ##### 즉, 입력 x와 $\theta$가 주어졌을 때 y=i를 예측할 확률이다.
 
