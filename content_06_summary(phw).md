@@ -14,7 +14,7 @@
 
   ##### 여기에서 linear regression을 아래와 같이 사용할 수 있다.
 
-  ![image-20210312003938217](C:\Users\korea\AppData\Roaming\Typora\typora-user-images\image-20210312003938217.png)
+  ##### ![content_06(1)](img/content_06(1).PNG)
 
   ##### hypothesis의 결과값이 0.5(임계값, threshold)가 되는 곳에 수직으로 선을 긋고, 그 임계값에 해당하는 x의 값을 기준으로 output을 분류한다.(분홍점의 x좌표보다 큰 값이 들어오면 1로, 작은값이 들어오면 0으로)
 
