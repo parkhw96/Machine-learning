@@ -4,7 +4,7 @@
 
 - ### Artificial neural network - representation of a neurone
 
-  ##### ![image-20210326160009605](C:\Users\korea\AppData\Roaming\Typora\typora-user-images\image-20210326160009605.png)
+  ##### ![content_08(1)](img/content_08(1).PNG)
 
   ##### 이 그림에서 neurone은 logistic unit(논리 유닛)이다. input wire들을 통해 입력을 받으며, logistic unit은 계산을 한다. 그리고 output wire들을 통해 output을 보낸다.
 
@@ -14,7 +14,7 @@
 
   ##### 위의 그림은 한 개의 neurone만 가지고 있는 것을 표현한 것이고, 아래와 같이 neurone을 그룹으로 묶어 신경망을 만들 수 있다.
 
-  ![image-20210326160447531](C:\Users\korea\AppData\Roaming\Typora\typora-user-images\image-20210326160447531.png)
+  ##### ![content_08(2)](img/content_08(2).PNG)
 
   ##### 여기에서 input은 $x_1, x_2, x_3$이다. 또한 첫번째 layer의 input activation이라고도 부른다.($a_1^{1}, a_2^{1}, a_3^{1}$)
 
@@ -48,7 +48,7 @@
 
   ##### 계산은 어떻게 이루어 질까? 우선, 각각의 node에 대해 activation 함수를 계산하는데 그 activation은 그 node에 대한 input과 parameter에 대해 달려 있다.
 
-  ![image-20210326162826935](C:\Users\korea\AppData\Roaming\Typora\typora-user-images\image-20210326162826935.png)
+  ##### ![content_08(3)](img/content_08(3).PNG)
 
   ##### layer 2에 있는 activation들을 bias term과 input 값들에 기반해 계산한다.
 
@@ -70,7 +70,7 @@
 
   ##### 이 부분에서는 계산을 효율적으로 하기 위해 vectorized 구현하는 방법을 알아본다.
 
-  ![image-20210326164220175](C:\Users\korea\AppData\Roaming\Typora\typora-user-images\image-20210326164220175.png)
+  ##### ![content_08(4)](img/content_08(4).PNG)
 
   ##### 위에서 보았던 것과 같은 그림이 있다.
 
@@ -80,7 +80,7 @@
 
   ##### 위와 똑같이 $z_2^{2}, z_3^{3}$도 정의할 수 있다.
 
-  ![image-20210326164755256](C:\Users\korea\AppData\Roaming\Typora\typora-user-images\image-20210326164755256.png)
+  ##### ![content_08(5)](img/content_08(5).PNG)
 
   ##### 이렇게 되면 다음과 같은 절차로 neural network의 계산을 벡터화할 수 있다.
 
@@ -92,7 +92,7 @@
 
   ##### 이렇게 표기하게 되면 $a^1$은 input vector이고, $a^2$는 $g(z^2)$에 의해 계산된 값들의 vector이다.
 
-  ![image-20210326165611880](C:\Users\korea\AppData\Roaming\Typora\typora-user-images\image-20210326165611880.png)
+  ##### ![content_08(6)](img/content_08(6).PNG)
 
   ##### 이렇게 마지막 hypothesis를 계산할 때 $a_0^{2}$가 필요하다. 이것은 앞서 말했듯이 bias unit으로 1이다. hypothesis를 계산하기 위해서 $a^2$를 [3 x 1] 크기의 벡터에서 $a_0^{2}$를 더해 [4 x 1] 크기의 벡터로 만든다.
 
@@ -108,7 +108,7 @@
 
 - ### Neural networks learning its own features
 
-  ##### ![image-20210326171320078](C:\Users\korea\AppData\Roaming\Typora\typora-user-images\image-20210326171320078.png)
+  ##### ![content_08(7)](img/content_08(7).PNG)
 
   ##### hypothesis가 $g(\Theta_{10}^{2}a_{0}^{2} + \Theta_{11}^{2}a_{1}^{2} + \Theta_{12}^{2}a_{2}^{2} + \Theta_{13}^{2}a_{3}^{2})$과 같이 나오므로 위의 그림은 logistic regression과 비슷하다. 다른 점은, 입력이 feature vector 아니라, hidden layer에 의해 계산된 값의 features들이라는 것이다.
 
@@ -116,7 +116,7 @@
 
   ##### 예를 들면, layer 1에서 layer 2로 mapping하는 것은 다른 parameter 행렬 $\Theta^1$에 의해 결정된다. 따라서 neural network에서는 original input features($x_1, x_2, x_3$)를 logistic regression에 제공하지 않고 스스로 학습된 features($a_1^{2}, a_2^{2}, a_3^{2}$)들을 logistic regression에 제공한다.
 
-  ![image-20210326172540090](C:\Users\korea\AppData\Roaming\Typora\typora-user-images\image-20210326172540090.png)
+  ##### ![content_08(8)](img/content_08(8).PNG)
 
   ##### 위와 같이 layer마다 node들이 많을 수도 있고 적을 수도 있다.
 
@@ -130,9 +130,9 @@
 
   - #### Neural Network example 1: And function
 
-    ##### ![image-20210326172844657](C:\Users\korea\AppData\Roaming\Typora\typora-user-images\image-20210326172844657.png)
+    ##### ![content_08(9)](img/content_08(9).PNG)
 
-    ##### ![image-20210326172956302](C:\Users\korea\AppData\Roaming\Typora\typora-user-images\image-20210326172956302.png)
+    ##### ![content_08(10)](img/content_08(10).PNG)
 
     ##### 이렇게 하면 And 함수를 계산할 수 있다.
 
@@ -140,7 +140,7 @@
 
     ##### not function은 아래와 같이 구현한다.
 
-    ![image-20210326173132155](C:\Users\korea\AppData\Roaming\Typora\typora-user-images\image-20210326173132155.png)
+    ##### ![content_08(11)](img/content_08(11).PNG)
 
     ##### negative를 원하는 variable 앞에 큰 음수의 가중치를 둠으로써 negation function를 구현할 수 있다.
 
@@ -148,7 +148,7 @@
 
     ##### XNOR function은 AND, OR, Neither를 결합함으로써 만들 수 있다.
 
-    ![image-20210326173404781](C:\Users\korea\AppData\Roaming\Typora\typora-user-images\image-20210326173404781.png)
+    ##### ![content_08(12)](img/content_08(12).PNG)
 
 ---
 
@@ -164,10 +164,10 @@
 
   ##### 만약 이미지가 pedestrian이라면, 그에 상응하는 y는 [1, 0, 0, 0]으로 이루어진 벡터이다.
 
-  ![image-20210326174050226](C:\Users\korea\AppData\Roaming\Typora\typora-user-images\image-20210326174050226.png)
+  ##### ![content_08(13)](img/content_08(13).PNG)
 
   ##### 이전에 logistic regression multiclass classification에서 y의 값을 1, 2 ,3 4로 나타냈다면, 이제는 아래와 같이 나타낸다.
 
-  ![image-20210326174254266](C:\Users\korea\AppData\Roaming\Typora\typora-user-images\image-20210326174254266.png)
+  ##### ![content_08(14)](img/content_08(14).PNG)
 
   
