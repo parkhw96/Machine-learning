@@ -4,7 +4,7 @@
 
 - ### Prioritizing what to work on - spam classification example
 
-  ##### ![image-20210416150609861](C:\Users\korea\AppData\Roaming\Typora\typora-user-images\image-20210416150609861.png)
+  ##### ![content_11(1)](img/content_11(1).PNG)
 
   ##### 왼쪽 같은 이메일은 잘못된 철자가 들어있는 스팸 이메일이고, 오른쪽 같은 이메일은 일반 이메일이다. 
 
@@ -14,7 +14,7 @@
 
   ##### 이러한 모든 단어들을 하나의 긴 벡터로 만든다.(reference vector로 인코딩한다.)
 
-  ![image-20210416151156541](C:\Users\korea\AppData\Roaming\Typora\typora-user-images\image-20210416151156541.png)
+  ##### ![content_11(2)](img/content_11(2).PNG)
 
   ##### 위와 같이 feature vector x를 정의하는데, 특정 단어가 있는지 없는지의 여부에 따라 feature vector에 0과 1을 표시한다. 단, 똑같은 단어가 여러번 나와도 1로 표시한다.
 
@@ -32,7 +32,7 @@
 
     ##### 스팸 분류기를 만들 때 cross validation set에서 알고리즘이 오류를 일으키는 이메일들을 직접 점검한다.
 
-    ##### ![image-20210416153131351](C:\Users\korea\AppData\Roaming\Typora\typora-user-images\image-20210416153131351.png)
+    ##### ![content_11(3)](img/content_11(3).PNG)
 
     ##### 위와 같이 500개의 CV set을 가지고 있는 스팸 분류기를 만들었다. 그러나 100개의 오류가 나므로 오류율이 높다.
 
@@ -70,11 +70,11 @@
 
     ##### 한쪽으로 치우친 왜곡된 클래스를 평가할 때 정확도 외에 다른 오류 지표나 평가 지표가 필요하다. 왜냐하면 위의 예에서처럼 정확도로만 평가를 하게 되면 좋지 않은 결과를 내기 때문이다.
 
-    ##### ![image-20210416160255239](C:\Users\korea\AppData\Roaming\Typora\typora-user-images\image-20210416160255239.png)
+    ##### ![content_11(4)](img/content_11(4).PNG)
 
     ##### 정확도(Precision)는 암이라고 예측한 모든 환자중에서 실제로 암에 걸린 환자의 비율을 나타낸다. 즉, 암을 분류하는 것의 정확도는 (실제 암에 걸린 환자 수) / (예측된 암에 걸린 환자 수)이다.
 
-    ![image-20210416160943035](C:\Users\korea\AppData\Roaming\Typora\typora-user-images\image-20210416160943035.png)
+    ##### ![content_11(5)](img/content_11(5).PNG)
 
     ##### 즉, 1행의  두 항목을 다 더한 것이 분모로 가게 되고, 분자는 true positive가 된다.(전체 positive 중의 실제 positive)
 
@@ -82,7 +82,7 @@
 
     ##### 재현율(Recall)은 실제 암에 걸린 환자 중에서 암이라고 예측한 환자의 비율이다. 즉, 정확히 예측한 비율이다.  (암환자라고 예측한 수) / (실제로 암에 걸린 환자 수)
 
-    ![image-20210416161345205](C:\Users\korea\AppData\Roaming\Typora\typora-user-images\image-20210416161345205.png)
+    ##### ![content_11(6)](img/content_11(6).PNG)
 
     ##### 분모는 첫번째 열에 있는 두 항목을 더한 것이다.
 
@@ -106,17 +106,17 @@
 
   ##### 반대로 임계값은 0.3으로 바꾼다면 재현율은 높아지게 되지만, 정확도는 낮아지게 된다.
 
-  ![image-20210416163108056](C:\Users\korea\AppData\Roaming\Typora\typora-user-images\image-20210416163108056.png)
+  ##### ![content_11(7)](img/content_11(7).PNG)
 
   ##### 위와 같이 임계값을 무엇으로 바꾸냐에 따라 정확도와 재현율이 달라진다.
 
   ##### 정확도와 재현율을 그래프로 그릴 수 있다.
 
-  #####  ![image-20210416163326670](C:\Users\korea\AppData\Roaming\Typora\typora-user-images\image-20210416163326670.png)
+  ##### ![content_11(8)](img/content_11(8).PNG)
 
   ##### 임계값이 크다면 정확도는 높지만 재현율은 낮고, 임계값이 작다면 정확도는 낮지만 재현율은 높다.
 
-  ##### ![image-20210416163631603](C:\Users\korea\AppData\Roaming\Typora\typora-user-images\image-20210416163631603.png)
+  ##### ![content_11(9)](img/content_11(9).PNG)
 
   ##### 이 알고리즘 중에 어떤 것이 가장 좋다고 판단할 수 있을까?
 
@@ -134,7 +134,7 @@
 
 - ### Data for machine learning
 
-  ![image-20210416164523576](C:\Users\korea\AppData\Roaming\Typora\typora-user-images\image-20210416164523576.png)
+  ##### ![content_11(10)](img/content_11(10).PNG)
 
   ##### 위와 같이 결과를 통해 training set 사이즈가 증가하면 accuracy도 증가하는 것을 알 수 있다.
 
