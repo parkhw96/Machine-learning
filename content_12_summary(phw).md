@@ -138,7 +138,13 @@
   
   ##### 이러한 방법으로 x대신 f를 사용한다.
   
+  ##### ![content_12(23)](img/content_12(23).PNG)
+  
+  ##### 위와 같이 f가 m+1차원으로 변경되었기 때문에, $\theta$도 m+1차원이다.
+  
   ##### ![content_12(22)](img/content_12(22).PNG)
+  
+  ##### 정규화항도 n이 아닌 m으로 변경된다.
   
   ##### C가 크다면 $\lambda$가 작은 것과 동일하며 low bias, high variance이며 overfitting하기 쉽다.
   
